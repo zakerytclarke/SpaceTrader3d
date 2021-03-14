@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Space Trader 3d</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <img src="/textures/cockpit.png" style="position:fixed;width:100%;z-index:100" />
+
+    <div class="hud" style="right:0px;top:0px;">
+      <p>Engine:100%</p>
+      <p id="speed">Speed:</p>
+      <p id="acceleration">Acceleration:</p>
+      <p id="pitch">Pitch:</p>
+      <p id="roll">Roll:</p>
+      <p id="yaw">Yaw:</p>
+    </div>
+
+
+    <div class="hud" style="left:0px;bottom:0px;">
+      <p>System: Sol</p>
+      <p id="location">Location: </p>
+      
+      <p id="apiIntegrity">Network Uplink: </p>
+    </div>
+
+
+
+    <div class="hud" style="right:0px;bottom:0px;">
+      <p id="cmdr">CMDR</p>
+      <p id="balance">Credits: </p>
+      <p id="shipType">Ship: </p>
+      
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@2410ad1a8f5844df00191600eafda59def537830/examples/js/controls/OrbitControls.js"></script>
+    <script src="environment.js"></script>
+    <script src="account.js"></script>
+    <script src="physics.js"></script>
+    <script src="api.js"></script>
+    <script src="input.js"></script>
+    <script src="generator.js"></script>
+    <script src="render.js"></script>
+
+    <script src="ui.js"></script>
+  </body>
+</html>

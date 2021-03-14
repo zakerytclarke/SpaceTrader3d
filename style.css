@@ -1,0 +1,31 @@
+html{
+  width:100vw;
+  height:100vh;
+  overflow: hidden;
+  color:black;
+  background-color:black;
+  color:#fd661a
+}
+
+
+.hud{
+  background-color:#212e3e;
+  border:2px #346f93 solid;
+  position: fixed;
+  padding-left:20px;
+
+  padding-right:20px;
+  z-index:1000;
+}
+
+.hud::before {    
+      content: "";
+      background-image: url('/textures/lines.jpeg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.05;
+}
